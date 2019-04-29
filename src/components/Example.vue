@@ -1,26 +1,19 @@
 <template>
   <div>
-    <h1 style="width:10% ;margin:0 auto;text-align:center">
-      Название
+    <h1 style="margin:0 auto;text-align:center">
+      Анкета
     </h1>
-      <FirstPartForm></FirstPartForm>
-      <ShowResultAfterCreatePoll type-action="create"></ShowResultAfterCreatePoll>
-      <div style="height:300px"></div>
-
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
 
-  import FirstPartForm from './FirstPartForm.vue';
-
-
 
   export default {
     name: 'CreateExpressPoll',
     components: {
-      FirstPartForm
-
+    
     },
     data() {
     return {
@@ -35,5 +28,16 @@
 
 <style lang='css'>
 
+  .express-poll__title{
+    margin-top: 16px;
+  }
 
+  .express-poll__field{
+    margin-top: 8px;
+  }
+
+  .express-poll__block{
+    margin-top:24px
+  }
+  
 </style>
